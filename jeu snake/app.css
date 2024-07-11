@@ -1,0 +1,146 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2a2a2a;
+}
+
+canvas {
+    border: 1px solid #585858;
+    margin-top: 50px;
+}
+
+.content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+}
+
+.col {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #9c27b0;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+svg {
+    height: 40px;
+    width: 40px;
+}
+
+button {
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+button.start {
+    background: darkorange;
+    color: white;
+}
+
+button.pause {
+    background: yellow;
+    color: #848421;
+}
+
+.config {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+
+.bouton-orange {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    border: 2px solid darkorange;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Effet de relief */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.bouton-orange:hover {
+    background-color: darkorange;
+    transform: translateZ(-10px); /* Effet de léger décalage vers le haut */
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}

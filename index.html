@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Site d'Achat-Revente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="bande-orange"></div>
+        <h1>CONNECTION OR CREATION ACCOUNT</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </nav>
+        <div class="bande-orange"></div>
+    </header>
+
+    <main>
+
+        <section id="creer-compte">
+            <h2>Créer un compte</h2>
+            <form id="form-creer-compte" method="POST">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required><br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required><br>
+
+                <label for="email">Adresse e-mail</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone" required><br>
+
+                <label for="mot_de_passe">Mot de passe</label>
+                <input type="password" id="mot_de_passe" name="mot_de_passe" required><br>
+
+                <button type="submit">S'inscrire</button>
+            </form>
+        </section>
+
+        <section id="se-connecter">
+            <h2>Se connecter</h2>
+            <form id="form-se-connecter" method="POST">
+                <label for="email_connexion">Adresse e-mail</label>
+                <input type="email" id="email_connexion" name="email_connexion" required><br>
+
+                <label for="mot_de_passe_connexion">Mot de passe</label>
+                <input type="password" id="mot_de_passe_connexion" name="mot_de_passe_connexion" required><br>
+
+                <button type="submit">Se connecter</button>
+                <p><a class="secret-admin-text" href="thankyou.html">se connecter</a></p>
+                <br>
+                <br>
+            </form>
+        </section>
+        <br>
+    </main>
+    <br>
+    <br>
+
+    <!-- Pied de page -->
+    <footer id="footer">
+        <div class="bande-orange"></div>
+        <p>&copy; 2024 Site d'Achat-Revente</p>
+        <div class="bande-orange"></div>
+    </footer>
+
+    <!-- Script JavaScript pour la redirection -->
+    <script>
+        // Redirection vers thankyou.html après soumission du formulaire de création de compte
+        document.getElementById('form-creer-compte').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche la soumission du formulaire
+            window.location.href = 'thankyou.html'; // Redirige vers thankyou.html
+        });
+
+        // Redirection vers thankyou.html après soumission du formulaire de connexion
+        document.getElementById('form-se-connecter').addEventListener('submit', function(event) {
+            event.preventDefault(); // Empêche la soumission du formulaire
+            window.location.href = 'thankyou.html'; // Redirige vers thankyou.html
+        });
+    </script>
+</body>
+</html>
+
+
